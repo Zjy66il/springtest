@@ -26,7 +26,7 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     @Override
-    public Boolean deleteByPrimaryKey(Long id) {
+    public Boolean deleteByPrimaryKey(Integer id) {
         Integer result = tCompanyMapper.deleteByPrimaryKey(id);
         return 1 == result ? true : false;
     }

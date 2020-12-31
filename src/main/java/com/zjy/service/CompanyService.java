@@ -9,7 +9,7 @@ public interface CompanyService {
 
     List<TCompany> getAll();
 
-    Boolean deleteByPrimaryKey(Long id);
+    Boolean deleteByPrimaryKey(Integer id);
 
     int insert(TCompany record, TProduct product);
 

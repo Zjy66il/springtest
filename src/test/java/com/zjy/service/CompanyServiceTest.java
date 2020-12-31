@@ -27,8 +27,8 @@ class CompanyServiceTest {
     }
 
     @ParameterizedTest
-    @ValueSource(longs = {1L, 2L, 3L})
-    public void testDeleteByPrimaryKey(Long id){
+    @ValueSource(ints = {5, 4 ,6})
+    public void testDeleteByPrimaryKey(Integer id){
         Boolean b = companyService.deleteByPrimaryKey(id);
         System.out.println(b.toString());
     }
